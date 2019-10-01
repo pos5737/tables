@@ -1,0 +1,32 @@
+
+\documentclass[12pt]{article}
+
+% These are the packages used in 
+% https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf
+% If you are familar with LaTeX and you know what you are doing, 
+% feel free to remove unnecessary packages from the list.
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\begin{document}
+
+This document just shows how to put Table \ref{tab:ave-by-party-congress} into a LaTeX document.
+
+\begin{table}[!h]
+\input{tab/ave-by-party-congress.tex}  % this is the key pieces that add the tex table from the file
+\caption{This table shows the average ideology for each party by Congress.\label{tab:ave-by-party-congress}}
+\end{table}
+
+\end{document}
